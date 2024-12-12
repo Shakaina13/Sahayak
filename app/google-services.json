@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "518925196140",
+    "firebase_url": "https://sahayak-d0111-default-rtdb.firebaseio.com",
+    "project_id": "sahayak-d0111",
+    "storage_bucket": "sahayak-d0111.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518925196140:android:be266d073d3b2bbcd7b149",
+        "android_client_info": {
+          "package_name": "com.example.sahayak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZdmlqebbswR-lJX6ZSE0dxuN8irfWJRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

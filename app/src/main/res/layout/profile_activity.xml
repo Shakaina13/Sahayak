@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@color/profileBg"
+            android:padding="20dp">
+            
+            <ImageView
+                android:id="@+id/imgImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/thief"/>
+
+            <TextView
+                android:id="@+id/txtNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgImage"
+              android:fontFamily="@font/baloo"
+                android:includeFontPadding="false"
+                android:text="Mr Professor"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/txtUserName"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/txtNameText"
+                 android:includeFontPadding="false"
+                 android:layout_marginLeft="10dp"
+                 android:layout_toRightOf="@id/imgImage"
+                 android:fontFamily="sans-serif"
+                 android:text="singh"
+                 android:textColor="@color/black"
+                 android:textSize="18sp"/>
+            
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="-30dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardBackgroundColor="@color/cardBg"
+                    android:elevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true">
+
+
+                            <ImageView
+                                android:id="@+id/imgArrow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/lawyer"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30dp"/>
+
+                            <TextView
+                                android:id="@+id/txtLawyerName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/imgArrow"
+                                android:text="All you need to know"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:paddingTop="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Jail"
+            android:clickable="false"
+            android:tooltipText="Jail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtJail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/jail"
+                android:enabled="false"
+                android:drawablePadding="10dp"
+                android:text="mahindra">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="NGO"
+            android:clickable="false"
+            android:tooltipText="NGO">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNgo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ngo"
+                android:enabled="false"
+                android:drawablePadding="10dp"
+                android:text="blah">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="phone Number"
+            android:clickable="false"
+            android:tooltipText="jailor Contact">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phonenumber"
+                android:enabled="false"
+                android:drawablePadding="10dp"
+                android:text="blah">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="proceedings"
+            android:clickable="false"
+            android:tooltipText="No. of proceedings">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtProceedings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/proceeding"
+                android:enabled="false"
+                android:drawablePadding="10dp"
+                android:text="blah">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/cardBg"
+                android:fontFamily="monospace"
+                android:paddingLeft="10dp"
+                android:layout_margin="20dp"
+                android:paddingRight="10dp"
+                android:text="DONE"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+</ScrollView>
